@@ -4,5 +4,12 @@ var obj = {
     c: 'montana'
 }
 function removeNumbersLessThan(num, obj) {
-    // your code here
+   for(const property in obj){
+        if(obj[property]<num)
+        delete(obj[property])
+   }
 }
+
+
+removeNumbersLessThan(5, obj);
+console.log(obj); // --> { a: 8, c: 'montana' }

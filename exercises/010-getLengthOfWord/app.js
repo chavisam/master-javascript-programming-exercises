@@ -1,3 +1,8 @@
 function getLengthOfWord(word) {
-  // your code here
+  var carac = word.length
+  return carac
 }
+
+
+var output = getLengthOfWord('some');
+console.log(output); // --> 4

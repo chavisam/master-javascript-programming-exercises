@@ -1,3 +1,9 @@
 function addProperty(obj, key) {
-  // your code here
+  
+  var value = obj[key]=true
+  return obj
 }
+
+var myObj = {};
+addProperty(myObj, 'myProperty');
+console.log(myObj.myProperty); // --> true

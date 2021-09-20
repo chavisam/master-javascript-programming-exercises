@@ -1,5 +1,7 @@
 function getAllElementsButNth(array, n) {
-    // Write your function here
+    var NewArray = array.splice(n,1)
+
+    return array
 
 }
 var output = getAllElementsButNth(['a', 'b', 'c'], 1);
