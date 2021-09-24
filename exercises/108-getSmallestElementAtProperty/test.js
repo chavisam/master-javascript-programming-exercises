@@ -13,10 +13,10 @@ test('If the array is void, it should return an void array.', () => {
     var output = getSmallestElementAtProperty(obj, 'key')
     expect(output).toBe(1)
 
-    obj = {
+    var obj = {
         key: []
     };
-    output = getSmallestElementAtProperty(obj, 'key')
+    var output = getSmallestElementAtProperty(obj, 'key')
     expect(output).toEqual([])
 })
 

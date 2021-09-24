@@ -1,9 +1,9 @@
-let y=0;
-const result = {};
 
 
 function countAllCharacters(string){
-
+  let y=0;
+  const result = {};
+  
     for (let i = 0; i < string.length; i++) {
         var element = string[i];
 

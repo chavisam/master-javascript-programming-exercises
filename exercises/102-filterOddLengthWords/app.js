@@ -1,6 +1,8 @@
-var result = []
+
 
 function filterOddLengthWords(words) {
+
+    var result = []
     for (const value in words) {
   
         const element = words[value]
@@ -13,5 +15,5 @@ function filterOddLengthWords(words) {
      return result
 }
 
-var output = filterOddLengthWords(['there', 'it', 'is', 'now','odd','even']);
+var output = filterOddLengthWords(['there', 'it', 'is', 'now','even']);
 console.log(output); // --> ['there', "now']

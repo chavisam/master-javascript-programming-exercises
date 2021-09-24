@@ -1,8 +1,13 @@
 var arr = [];
 
 function getAllLetters(str) {
-    for(let i= 0 ; i<str.length ; i++){
-        arr.push(str[i])
+   
+    for (let key in str) {
+        
+            const element = str[key];
+            
+            arr.push(element)
+        
     }
     return arr
 }
