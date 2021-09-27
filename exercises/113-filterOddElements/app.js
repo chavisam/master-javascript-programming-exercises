@@ -1,5 +1,7 @@
 function filterOddElements(arr) {
-  // your code here
+  const result = arr.filter(value => value%2!==0);
+  
+ return result
 }
 
 var output = filterOddElements([1, 2, 3, 4, 5]);

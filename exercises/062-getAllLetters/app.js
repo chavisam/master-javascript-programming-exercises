@@ -1,15 +1,13 @@
-var arr = [];
+var array = [];
 
 function getAllLetters(str) {
    
-    for (let key in str) {
-        
-            const element = str[key];
-            
-            arr.push(element)
+    for (let i = 0; i < str.length; i++) {
+        const element = str[i];          
+            array.push(element)
         
     }
-    return arr
+    return array
 }
 
 var output = getAllLetters('Radagast');

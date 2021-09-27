@@ -1,5 +1,11 @@
 function squareElements(arr) {
-  // your code here
+ let result=[]
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    
+    result.push(element*element)
+  }
+  return result
 }
 
 var output = squareElements([1, 2, 3]);

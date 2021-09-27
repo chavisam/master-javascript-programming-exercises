@@ -1,6 +1,7 @@
 
 function filterEvenElements(arr) {
-    // your code here
+    const result = arr.filter(value => value%2===0);
+    return result
 }
 
 var output = filterEvenElements([2, 3, 4, 5, 6]);

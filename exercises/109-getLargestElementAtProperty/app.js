@@ -3,7 +3,7 @@ function getLargestElementAtProperty(obj, key) {
 
   var value = obj[key];
   
-  if(value===[]) return []
+  
   if(Array.isArray(value)===false) return []
   if(value===undefined) return []
 
@@ -14,7 +14,8 @@ function getLargestElementAtProperty(obj, key) {
      
 
   }
-  return y
+  if(value.length===0) return []
+  else return y
 }
 
 

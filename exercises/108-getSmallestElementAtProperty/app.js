@@ -4,7 +4,7 @@ function getSmallestElementAtProperty(obj, key) {
   var element = obj[key];
   var result = []
 
-  if(element==[]) return result
+  
   if(Array.isArray(element)===false) return result
   if(element===undefined) return result
 
@@ -14,7 +14,8 @@ function getSmallestElementAtProperty(obj, key) {
     else if(element[value]<y) y = element[value]
     
   }
-  return y
+  if(element.length===0) return []
+  else return y
 }
 
 var object = {

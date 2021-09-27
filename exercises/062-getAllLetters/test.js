@@ -12,7 +12,7 @@ test ('The function returns an array containing every character in the word.', (
     var output = getAllLetters(input)
     expect(output).toEqual(["R", "a", "d", "a", "g", "a", "s", "t"]);
 
-    input = "Pedro"
-    output = getAllLetters(input)
+    var input = "Pedro"
+    var output = getAllLetters(input)
     expect(output).toEqual(["P", "e", "d", "r", "o"]);
 })

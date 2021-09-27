@@ -1,19 +1,31 @@
-var result = []
-var shortest= 99999999999999999999999999999999999999999999999999999999999999999
 function findShortestElement(arr) {
-    
-    for (let i = 0; i < arr.length; i++) {
-        var element = arr[i].length
-      
-        if(element<shortest) shortest = element; result.push(arr[i])
-
-        
- 
-}
-    
-    return result
-//  result.sort(function(a, b){return a - b}); 
-//         return result[0]
+    var t = 999999999999999999999999999999999999999999999999999
+    var data = []
+    var result = []
+      for (let i = 0; i < arr.length; i++) 
+      {
+          
+          let wordlength = arr[i].length
+              data.push(wordlength)
+          
+            
+      }
+  
+          for (let y = 0; y < data.length; y++) {
+              var element = data[y];
+              
+  
+              
+  
+              if(element<t){
+                  result.pop()
+                  result.push(arr[y]);
+                  t = element
+              }
+          }
+  
+          if(arr.length===0) return ''
+          else return result[0]
 
 }
 

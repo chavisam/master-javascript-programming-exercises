@@ -1,5 +1,19 @@
 function getStringLength(string) {
-    // your code here
+
+
+
+    var t=0
+    var data
+
+    do
+    {
+        data =string.slice(0,t+1)
+        t=t + 1
+       
+    }
+    while (data != string)
+
+    return t
 }
 
 var output = getStringLength('hello');
