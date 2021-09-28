@@ -1,5 +1,12 @@
 function computeFactorialOfN(n) {
-    // your code here
+    let result = 1
+    for (let i =  n ; i>1; i--)   {
+        const element = i;
+        
+        result = result * element
+    
+    }
+    return result
 }
 
 var output = computeFactorialOfN(3); console.log(output); // --> 6

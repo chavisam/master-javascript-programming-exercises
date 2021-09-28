@@ -11,6 +11,6 @@ test('Function must return an object with each pair of elements as key-value.', 
     let output = fromListToObject([['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]])
     expect(output).toEqual({ make: 'Ford', model: 'Mustang', year: 1964 })
 
-    output = fromListToObject([['name', 'Jerry'], ['pet', 'Cat']])
+    let output = fromListToObject([['name', 'Jerry'], ['pet', 'Cat']])
     expect(output).toEqual({ name: 'Jerry', pet: 'Cat' })
 })

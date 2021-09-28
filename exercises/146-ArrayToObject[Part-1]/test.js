@@ -11,6 +11,6 @@ test('The function must return an object as the first element and the key as the
     let output = transformFirstAndLast(['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce'])
     expect(output).toEqual({ Queen: 'Beyonce' })
 
-    output = transformFirstAndLast(['Kevin', 'Bacon', 'Love', 'Hart', 'Costner', 'Spacey'])
+    let output = transformFirstAndLast(['Kevin', 'Bacon', 'Love', 'Hart', 'Costner', 'Spacey'])
     expect(output).toEqual({ Kevin: 'Spacey' })
 })
